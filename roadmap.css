@@ -1,0 +1,135 @@
+/* Roadmap Section */
+.roadmap-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #181818;
+    background-image: url('./images/bggraph.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Roadmap Cards */
+.roadmap-card {
+    background-color: #191919;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    
+    text-align: left;
+}
+
+/* Card Headings */
+.roadmap-card h3 {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* FontAwesome Icons */
+.roadmap-card h3 i {
+    color: #0093e3;
+}
+
+/* Roadmap Steps */
+.roadmap-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-card ul li {
+    font-size: 2rem;
+    color: #ebe7e4;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    font-family: 'DorkySans', sans-serif;
+    font-weight: bolder;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .roadmap-section {
+        padding: 60px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center; /* Center title on mobile */
+    }
+
+    .roadmap-card {
+        padding: 20px;
+        margin-bottom: 20px; /* Add spacing between stacked cards */
+    }
+
+    .roadmap-card h3 {
+        font-size: 1.8rem;
+        flex-direction: column; /* Stack icon and text */
+        text-align: center;
+    }
+
+    .roadmap-card ul li {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .roadmap-card {
+        padding: 15px;
+    }
+
+    .roadmap-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .roadmap-card ul li {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-section {
+        padding: 40px 10px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .roadmap-card {
+        padding: 10px;
+    }
+
+    .roadmap-card h3 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .roadmap-card ul li {
+        font-size: 1.3rem;
+        padding: 6px;
+    }
+}
