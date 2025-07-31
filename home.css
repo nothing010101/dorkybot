@@ -1,0 +1,451 @@
+/* Home Section Styling (Kept as is) */
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 140vh; */
+    text-align: center;
+    background-color: #181818;
+    color: white;
+    padding-top: 9%;
+    position: relative;
+    background-image: url('./images/bggraph.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Enlarged Text (Kept as is) */
+.home-title {
+    margin-top: 50px;
+    font-family: "House Sans Condensed Light", sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Image Placement (Kept as is) */
+/* .trade-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+/* Small Image (Kept as is) */
+.small-icon {
+    width: 200px;
+    height: auto;
+    transform: rotate(-20deg) !important;
+}
+
+/* Welcome Text (Kept as is) */
+.welcome-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: #ccc;
+    margin-bottom: 200px !important;
+}
+
+/* Platforms Section - Positioned in a Single Row */
+.platforms {
+   
+    display: flex;
+    gap: 20px;
+}
+
+/* Each Platform Item */
+.platform {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.0);  /* Slight transparent background */
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.telegram-platform {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #0093e3 !important;  /* Slight transparent background */
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* White Circular Icon Background (Left Side) */
+.icon-box {
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Icons inside Circles */
+.icon-box img {
+    width: 30px;
+    height: 30px;
+}
+/* Icon Styling */
+.icon-box i {
+    font-size: 24px;
+    color: #0093e3; /* Black icons inside white background */
+}
+
+
+/* Text Section (Right Side of Logo) */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Labels Above Platform Names */
+.label {
+    font-size: 12px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.labels {
+    font-size: 12px;
+    color: #97be63;
+    background: #97be631b ;
+    border: 1px solid #97be63;
+    border-radius: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    font-weight: 500;
+
+}
+.labelL {
+    font-size: 12px;
+    color: #c2ac70;
+    background-color: #c2ac7034;
+    border: 1px solid #c2ac70;
+    border-radius: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.telegram-label {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px 10px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+/* Platform Name */
+.platform-name {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Telegram Button */
+.telegram {
+    background-color: #0093e3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Right Section Positioned on the Right End */
+.right-section {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* QR Code Background */
+/* New Dark Background Wrapper */
+.qr-wrapper {
+    background: #1e1e1e; /* Dark background */
+    padding: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.353);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* QR Box Styling */
+.qr-box {
+    background: white; /* White QR code box */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust QR Code Size */
+.qr-box img {
+    width: 80px; /* Smaller QR code */
+    height: auto;
+}
+
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Default Icon Styles */
+.social-icons i {
+    font-size: 24px;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social-icons i:hover {
+    color: #0093e3 !important;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Remove Background for One Telegram Icon */
+.social-icons i.no-bg {
+    background: transparent;
+    padding: 0; /* Remove padding for equal sizing */
+    color: white;
+}
+
+
+/* Doodle Lines Styling */
+.doodle-lines {
+    position: absolute;
+    top: 22%; /* Adjust based on your image size */
+    left: 70%;
+    transform: translateX(-50%);
+    width: 250px; /* Adjust size for desktop */
+    height: auto;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+    .doodle-lines {
+        width: 120px; /* Slightly smaller for tablets */
+        top: 230px;
+    }
+    
+}
+
+/* Centering for mobile view */
+@media (max-width: 768px) {
+    .telegram-platform {
+        flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 100px;
+    }
+
+    .telegram-label {
+        display: block;
+        text-align: center;
+        margin: 5px auto; /* Centers it horizontally */
+    }
+
+    .telegram {
+        font-size: 10px !important;
+        background-color: transparent !important;
+        margin-left: -20px !important;
+    }
+    .platform-name {
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    /* Reduce title font size for tablets */
+    .home-title {
+        font-size: 4.5rem;
+    }
+
+    /* Adjust right section for better fit */
+    .right-section {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        position: static;
+        margin-top: 30px;
+    }
+
+    .qr-box img {
+        width: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Make home section fit smaller screens */
+    .home-section {
+        height: auto;
+        padding: 140px 15px 50px 15px;
+        text-align: center;
+        /* height: 133vh !important; */
+    }
+
+    /* Reduce title font size */
+    .home-title {
+        margin-top: 10px !important;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    /* Adjust welcome text */
+    .welcome-text {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-bottom: 100px !important;
+    }
+    .small-icon{
+        width: 50px !important;
+    }
+
+    /* Platforms - Stack Vertically */
+    .platforms {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+  
+    /* Each Platform Item */
+    .platform {
+        width: 50% !important;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    /* Adjust QR Box */
+    .qr-box {
+        padding: 15px;
+    }
+
+    .qr-box img {
+        width: 90px;
+    }
+
+    /* Align Right Section */
+    .right-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        gap: 8px;
+    }
+
+    /* Smaller icons */
+    .icon-box {
+        margin-top: 30px !important;
+        margin-left: -10px !important;
+        width: 20px;
+        height: 20px;
+        background-color: transparent !important;
+    }
+    .telegramlogo{
+        color: white !important;
+    }
+    .tellabel{
+        margin-left: -35px !important;
+    }
+
+    .icon-box i {
+        font-size: 10px;
+    }
+
+    /* Dropdown Button */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller screen adjustments */
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .welcome-text {
+        font-size: 0.9rem;
+        margin-bottom: 50px !important;
+    }
+
+    .platforms {
+        gap: 8px;
+    }
+
+    .platform {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .qr-box img {
+        width: 80px;
+    }
+
+    .icon-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-box i {
+        font-size: 14px;
+    }
+}
