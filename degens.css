@@ -1,0 +1,140 @@
+/* Degens Section */
+.degens-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: #181818;
+    color: white;
+}
+
+/* Container Styling */
+.degens-section .container {
+    background-color: #0093e3;
+    border-radius: 15px; /* Rounded corners */
+    padding: 0px 50px;
+}
+
+/* Text Content */
+.text-content h2 {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    max-width: 600px;
+}
+
+/* Image Content */
+.image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.fillbtn{
+    margin-top: 0px;
+    height: 40px;
+    width: 180px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: black;
+    color: #0093e3;
+    font-weight: 500;
+    border: none;
+
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .degens-section {
+        padding: 60px 0;
+    }
+
+    .degens-section .container {
+        padding: 40px;
+    }
+
+    .text-content h2 {
+        font-size: 3rem; /* Adjust heading size for tablets */
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .fillbtn {
+        width: 160px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .degens-section {
+        padding: 50px 0;
+    }
+
+    .degens-section .container {
+        padding: 30px;
+        text-align: center; /* Center-align text on mobile */
+        height: 650px !important;
+    }
+
+    .text-content h2 {
+        font-size: 5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .image-content img {
+        max-width: 90%;
+    }
+
+    .fillbtn {
+        margin-top: 10px !important;
+        width: 150px;
+        height: 35px;
+        font-size: 16px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .degens-section {
+        padding: 40px 0;
+    }
+
+    .degens-section .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+
+    .fillbtn {
+        width: 140px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
