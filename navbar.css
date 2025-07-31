@@ -1,0 +1,202 @@
+/* Center Align Navbar Items */
+.navbar-nav {
+    display: flex !important;
+    justify-content: center !important;
+    flex-grow: 1 !important; /* Allows items to take up space */
+}
+
+/* Ensure Navbar Items Are Properly Spaced */
+.navbar-nav .nav-item {
+    padding: 0 5px !important;
+    margin-right: 50px !important; /* Add spacing between items */
+
+}
+
+
+/* Hover Effect for Navbar Items */
+.navbar-nav .nav-item .nav-link {
+    color: white !important; /* Default color */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0093e3 !important; /* Highlight color */
+    transform: scale(1.1) !important; /* Slight pop effect */
+}
+
+
+
+/* Sliding Bar Styles */
+.sliding-bar {
+    background: #000; /* Background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 50px; /* Initially below sliding bar */
+    z-index: 999;
+    background-color: #141414;
+    transition: top 0.3s ease-in-out;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.navbar.fixed {
+    top: 0; /* Move navbar to the top */
+}
+
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar-nav .nav-link {
+    color: #e9e8e3 !important;
+    font-size: 1rem;
+    padding: 10px 12px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0093e3;
+}
+
+.dropdown-toggle{
+    color: black !important;
+    font-size: 15px !important;  
+}
+.dropdown-toggle:hover{
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #0093e3;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 15px !important;
+}
+
+.dropdown-divider {
+    background-color: white;
+}
+
+.get-started-btn{
+    color: white !important;
+    border-radius: 25px !important;
+    background-color: #0093e3 !important;
+    padding: 15px !important;
+}
+.get-started-btn:hover {
+    background-color: #0093e3;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 25px !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    /* Center Align Navbar Items */
+    .navbar-nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Center Dropdown Items */
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    /* Make "Get Started" Button Full Width */
+    .get-started-btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Reduce Navbar Padding */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    /* Reduce Navbar Brand Size */
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    /* Reduce Navbar Links Spacing */
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        margin-left: 0;
+    }
+
+    /* Adjust Dropdown Text Size */
+    .dropdown-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce Padding */
+    .navbar {
+        padding: 8px 0;
+    }
+
+    /* Smaller Navbar Brand */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    /* Stack Navbar Links */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Make Get Started Button Fit Mobile */
+    .get-started-btn {
+        width: 90%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+.dropdownbtn1{
+    margin-left: 300px !important;
+}
