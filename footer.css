@@ -1,0 +1,224 @@
+/* Footer Section */
+.footer-section {
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    background-image: url('./images/bggraph.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Main Footer Heading */
+.footer-title {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* Footer Subtext */
+.footer-subtext {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #ccc;
+    margin-bottom: 100px;
+}
+
+/* Footer Content: Socials & Button */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #0093e3;
+}
+
+/* Telegram Community Styling */
+.telegram-group {
+    color: #0093e3;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+    background-color: #0093e3;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn i {
+    font-size: 1rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #272526;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    width: 200px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    padding: 12px 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'DorkySans', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.dropdown-menu li a:hover {
+    color: #0093e3;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Static Option */
+.static-option {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+/* Footer Logo */
+.footer-logo {
+    margin-bottom: 0px;
+}
+
+.footer-logo img {
+    width: 155px;
+        height: 40px !important;
+
+    margin: 100px 0;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+    .footer-title {
+        font-size: 6rem; /* Reduce title size for tablets */
+    }
+
+    .footer-subtext {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .dropdown-btn {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+
+    .footer-logo img {
+        width: 248px;
+        height: 61px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 4rem; /* Adjust title size for mobile */
+    }
+
+    .footer-subtext {
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .footer-logo img {
+        width: 248px !important;
+        height: 61px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 3rem;
+    }
+
+    .footer-subtext {
+        font-size: 0.8rem;
+        margin-bottom: 40px;
+    }
+
+    .footer-content {
+        margin-bottom: 0px;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+    }
+
+    .dropdown-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .footer-logo img {
+        width: 90px;
+    }
+}
