@@ -1,0 +1,270 @@
+/* Features Section */
+.features-section {
+    padding-top: 200px;
+    padding-bottom: 80px;
+    background-color: #181818;
+    color: white;
+}
+
+/* Card Styling */
+.feature-card {
+    background-color: #191919;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 650px;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.feature-card img {
+    width: 100%;
+    height: 300px; /* Ensures all images are same height */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Heading Styling */
+.feature-card h3 {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* Paragraph Styling */
+.feature-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 40px; /* Ensures proper gap between text and button */
+}
+
+/* Button Styling */
+.feature-btn {
+    width: 70%; /* Ensures button takes full width */
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px; /* Keeps button at bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Blue Button */
+.blue-btn {
+    background-color: #0093e3;
+    color: white;
+}
+
+/* Gray Button */
+.gray-btn {
+    background-color: gray;
+    color: white;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    /* Stack Cards Vertically */
+    .features-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Feature Card - Reduce Height */
+    .feature-card {
+        width: 100%;
+        height: 450px;
+        padding: 20px;
+    }
+
+    /* Image - Adjust for Mobile */
+    .feature-card img {
+        height: 200px;
+    }
+
+    /* Adjust Font Sizes */
+    .feature-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Make Button Full Width */
+    .feature-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce Padding */
+    .features-section {
+        padding: 40px 15px;
+    }
+
+    /* Feature Card - Smaller Padding */
+    .feature-card {
+        padding: 15px;
+    }
+
+    /* Reduce Image Height Further */
+    .feature-card img {
+        height: 180px;
+    }
+
+    /* Smaller Text */
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Full Width Button */
+    .feature-btn {
+        width: 90%;
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
+
+
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background: #181818;
+    color: white;
+}
+
+/* Features Heading */
+.features-heading {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    width: 100%;
+}
+
+/* Feature Card */
+.feature-text-card {
+    background: #191919;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Ensuring equal height */
+}
+
+/* Feature Title */
+.feature-text-card h3 {
+    font-family: 'DorkySans', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #e9e9e1;
+}
+
+/* Feature Text */
+.feature-text-card p {
+    font-size: 1rem;
+    color: #e9e9e1;
+    flex-grow: 1; /* Ensures text fills space properly */
+}
+
+@media (max-width: 768px) {
+    /* Features Section - Center Align */
+    .features-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack Features Vertically */
+    .features-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 15px;
+        width: 90%;
+    }
+
+    /* Reduce Padding & Ensure Flexibility */
+    .feature-text-card {
+        padding: 15px;
+        min-height: auto; /* Allow flexible height */
+    }
+
+    /* Adjust Heading Size */
+    .feature-text-card h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust Paragraph Font Size */
+    .feature-text-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce Padding */
+    .features-section {
+        padding: 40px 15px;
+    }
+
+    /* Heading - Smaller & Centered */
+    .features-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Make Cards Full Width */
+    .features-grid {
+        width: 100%;
+    }
+
+    /* Adjust Card Padding */
+    .feature-text-card {
+        padding: 12px;
+    }
+
+    /* Reduce Title & Text Sizes */
+    .feature-text-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-text-card p {
+        font-size: 0.85rem;
+    }
+}
