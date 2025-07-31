@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'DorkySans';
+    src: url('./fonts/fonts/fonnts.com-housesans-narrowthin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Apply the font globally */
+.home-title {
+    font-family: 'DorkySans', sans-serif;
+}
