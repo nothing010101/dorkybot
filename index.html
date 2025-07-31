@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/img.png">
+    <title>DorkyBot - Your Ultimate Trading Companion</title>
+    <meta name="description" content="Welcome to DORKY BOT Accessible on Telegram and soon through our own webapp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/cards.css">
+    <link rel="stylesheet" href="/degens.css">
+    <link rel="stylesheet" href="/roadmap.css">
+    <link rel="stylesheet" href="/footer.css">
+
+    <meta property="og:title" content="DorkyBot - Your Ultimate Trading Companion">
+    <meta property="og:description"
+        content="Welcome to DORKY BOT Accessible on Telegram and soon through our own webapp">
+    <meta property="og:url" content="https://dorkybot.fun">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dorkybot.fun/images/img.png">
+    <meta property="og:site_name" content="DorkyBot">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="dorkybot.fun">
+    <meta property="twitter:url" content="https://dorkybot.fun">
+    <meta name="twitter:title" content="DorkyBot - Your Ultimate Trading Companion">
+    <meta name="twitter:description"
+        content="Welcome to DORKY BOT Accessible on Telegram and soon through our own webapp">
+    <meta name="twitter:image" content="https://dorkybot.fun/images/img.png">
+
+
+
+
+    <!-- Font Awesome CDN (Include in <head> if not already) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        .montserrat-regular {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- CSS for Sliding Animation -->
+    <style>
+        .sliding-bar {
+            width: 100%;
+            overflow: hidden;
+            background: black;
+            /* Adjust if needed */
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+
+        .sliding-content {
+            display: flex;
+            gap: 50px;
+            animation: scrollText 50s linear infinite;
+        }
+
+        .sliding-item {
+            font-size: 22px;
+            color: white;
+            font-family: 'DorkySans', sans-serif;
+        }
+
+        .green {
+            color: #00ff00;
+            font-weight: 100;
+            font-family: 'Courier New', monospace;
+            /* Separate font for green numbers */
+        }
+
+        @keyframes scrollText {
+            from {
+                transform: translateX(10%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <!-- Sliding Bar Container -->
+    <div class="sliding-bar">
+        <div class="sliding-content">
+            <!-- <div class="sliding-item"><span class="green">$5.3B+</span> Lifetime Volume</div> -->
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+
+            <!-- Duplicate for seamless infinite scrolling -->
+            <!-- <div class="sliding-item"><span class="green">$5.3B+</span> Lifetime Volume</div> -->
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+
+
+            <!-- Duplicate for seamless infinite scrolling -->
+            <!-- <div class="sliding-item"><span class="green">$5.3B+</span> Lifetime Volume</div> -->
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+            <div class="sliding-item"><span class="green">DORKY BOT</span> - COMING SOON</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="200" height="auto">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items (Collapsible) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features1">Getting Started</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features2">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Docs</a></li> -->
+                </ul>
+
+                <!-- Get Started Button (Moved to Right) -->
+                <div class="ms-lg-3"> <!-- Adds spacing on large screens -->
+                    <a class="btn nav-link text-white dropdown-toggle" href="#" id="getStartedDropdown" role="button"
+                        data-bs-toggle="dropdown"
+                        style="font-weight: 700; border-radius: 25px; background: #0093e3; padding: 8px 15px;">
+                        GET STARTED
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" style="margin-right: 20px !important;"
+                        aria-labelledby="getStartedDropdown">
+                        <li>
+                            <a class="dropdown-item" href="https://t.me/dorkychat" target="_blank">
+                                <i class="fab fa-telegram"></i> ETH BOT Register
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item disabled text-white"
+                                style="font-size: 20px; border-top: 1px solid white; padding: 15px" href="#">
+                                <i class="fas fa-globe text-white"></i> Webapp
+                                <strong
+                                    style="font-size: 10px; border-radius: 15px; border: 1px solid white; padding: 5px;">Coming
+                                    soon</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section class="home-section">
+        <h1 class="home-title">
+            Welcome to
+            <span class="trade-text"> <img src="images/img.png" alt="Icon" class="small-icon"> DORKY BOT <br>
+                Your Ultimate Trading Companion!
+            </span>
+            <img src="images/doodlelines.png" alt="Doodle Lines" class="doodle-lines">
+        </h1>
+
+        <!-- <h1 class="home-title">
+            TRADE CRYPTO <br>
+            <span class="trade-text">
+                THE <img src="images/img.png" alt="Icon" class="small-icon"> DORKY WAY
+            </span>
+            <img src="images/doodlelines.png" alt="Doodle Lines" class="doodle-lines">
+        </h1> -->
+
+        <p class="welcome-text">
+            Accessible on Telegram and soon through our own webapp, Dorky Bot is designed to simplify your trading
+            experience. Whether you’re sniping fresh launches or securely trading live tokens, we’ve got you covered.
+            Seamlessly trade across Ethereum, Solana, Base, and BNB chains, with even more networks on the way!
+        </p>
+
+        <div class="platforms">
+            <!-- Telegram -->
+            <div class="telegram-platform">
+                <div class="icon-box">
+                    <i class="fa-brands fa-telegram telegramlogo"></i>
+                </div>
+                <div class="text-section">
+                    <span class="label tellabel"
+                        style="background-color: white !important; color: black !important;">SOON</span>
+                    <span class="telegram">TELEGRAM</span>
+                </div>
+            </div>
+
+            <!-- Webapp -->
+            <div class="platform">
+                <div class="icon-box">
+                    <i class="fa-solid fa-globe weblogo"></i>
+                </div>
+                <div class="text-section">
+                    <span class="labels">SOON</span>
+                    <span class="platform-name mt-2">WEBAPP</span>
+                </div>
+            </div>
+
+            <!-- App Store -->
+            <div class="platform">
+                <div class="icon-box">
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="text-section">
+                    <span class="labelL">LATER</span>
+                    <span class="platform-name mt-2">APP STORE</span>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!-- <div class="right-section">
+QR Code Wrapper (New Dark Background)
+<div class="qr-wrapper">
+    <div class="qr-box">
+        <img src="./images/1200px-QR_Code_Example.svg.png" alt="QR Code">
+    </div>
+</div>
+
+    Social Media Icons
+    <div class="social-icons">
+        <i class="fa-brands fa-x-twitter no-bg"></i>
+        <i class="fa-brands fa-telegram no-bg"></i>
+        <i class="fa-brands fa-telegram no-bg"></i>
+     
+    </div>
+</div> -->
+
+    </section>
+
+    <!-- cards -->
+    <section class="features-section" id="features1">
+        <div class="container">
+            <div class="row">
+                <!-- First Card: Telegram Bot -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="/images/telegram.jpg" alt="Telegram Bot">
+                        <div class="card-content">
+                            <h3>Telegram Bot</h3>
+                            <p>Your trusted partner in the trading game: Supercharge your profits with Dorky Bot on
+                                Telegram. Execute trades faster, catch launches earlier, and monitor live earnings with
+                                precision.
+                            </p>
+                            <button class="feature-btn gray-btn">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card: Webapp -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="./images/webapp.jpg" alt="Webapp">
+                        <div class="card-content">
+                            <h3>Webapp</h3>
+                            <p>Get ready for the next level of trading! Soon available right from your browser, Dorky
+                                Bot’s WebApp offers all the powerful features you love on Telegram, plus even more.
+                                Track your portfolio, build watchlists, and personalize your dashboard like never
+                                before.
+                            </p>
+                            <button class="feature-btn gray-btn">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Card: Dashboard -->
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="./images/dashboard.jpg" alt="Dashboard">
+                        <div class="card-content">
+                            <h3>Dashboard</h3>
+                            <p>$DORKY holders get more than just rewards — they get revenue! Every month, a portion of
+                                DorkyBot’s revenue is distributed among $DORKY holders. Claim your ETH, DORKY, and SOL
+                                rewards through our easy-to-use dashboard. Plus, create your own referral link!
+                            </p>
+                            <button class="feature-btn gray-btn">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container col-12 col-md-8" style="background: #181818 !important; overflow: hidden;">
+
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+            <!-- <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text">Track all markets on TradingView</span>
+            </a> -->
+        </div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+            async>
+                {
+                    "symbols": [
+                        {
+                            "description": "Ethereum",
+                            "proName": "COINBASE:ETHUSD"
+                        },
+                        {
+                            "description": "Bitcoin",
+                            "proName": "BITSTAMP:BTCUSD"
+                        },
+                        {
+                            "description": "Solana",
+                            "proName": "COINBASE:SOLUSD"
+                        }
+                    ],
+                        "isTransparent": false,
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "locale": "en"
+                }
+            </script>
+    </div>
+
+
+
+
+
+    <!-- features -->
+    <section class="features-section" id="features2">
+        <div class="container">
+            <!-- Features Heading -->
+            <h2 class="features-heading">Features</h2>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-text-card">
+                    <h3>Auto Sniping</h3>
+                    <p>Effortless sniping made simple. Just provide a contract address, set your preferred settings,
+                        and let Dorky Bot do the rest. Our automated system handles tax calculations, maxTx,
+                        methodID detection, and first safe block identification. No programming skills needed — just
+                        pure sniping power.
+                    </p>
+                </div>
+
+                <div class="feature-text-card">
+                    <h3>Limit Orders</h3>
+                    <p>Take control of your trading with smart automation. Set up limit orders to secure profits,
+                        protect your investment with stop loss or trailing stop loss, and even automate dip buying
+                        at your desired market cap or price. Get the best execution with minimal effort.</p>
+                </div>
+
+                <div class="feature-text-card">
+                    <h3>Copytrade</h3>
+                    <p>Why trade alone? Automatically copy the moves of successful traders while enjoying the same
+                        safety features. Let the experts do the heavy lifting while you reap the benefits.</p>
+                </div>
+
+                <div class="feature-text-card">
+                    <h3>Fast and Secure swaps</h3>
+                    <p>Trade with confidence. Our swaps are fortified with MEV-resistant technology, protecting you
+                        against sandwich attacks and frontrunning. Combined with ultra-fast execution, Dorky Bot
+                        ensures you always get the best buy-in price.
+                    </p>
+                </div>
+
+                <div class="feature-text-card">
+                    <h3>Anti Rug and Reorg protection</h3>
+                    <p>Safety comes first. Our advanced anti-rug system offers unmatched protection, boasting an
+                        impressive 85% success rate. Dorky Bot even guards you against block reorgs that could leave
+                        your trades vulnerable.
+                    </p>
+                </div>
+
+                <div class="feature-text-card">
+                    <h3>Scam and Honeypot Protection</h3>
+                    <p>Stay safe from scams before they happen. With Dorky Bot’s built-in simulation system, tokens
+                        are thoroughly tested before execution. If a successful sell can’t be simulated, your
+                        transaction won’t proceed — all done seamlessly by the bot.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- become expert -->
+    <section class="degens-section">
+        <div class="container col-11">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-md-5 offset-md-1 text-content">
+                    <h2>Become an Onchain Expert</h2>
+                    <p>
+                        Enter Dorky Bot — a powerful, lightning-fast trading platform built by degens, for degens.
+                        What started as a sniping tool has now evolved into a robust multi-chain trading platform.
+                        We're here to push boundaries, and we’re excited to have our community join us on this
+                        journey.
+                    </p>
+                    <div class="d-flex flex-column"
+                        style="background-color: #16141E; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); width: 80%; max-width: 400px; text-align: left; margin-left: 0;">
+
+                        <p class="fs-6  text-white mb-1" style="padding-left: 10px;"> Dorky Contract Address:
+                        </p>
+
+                        <div class="p-2"
+                            style="background-color: #0A0914 !important; border-radius: 10px; padding: 8px;">
+                            <p class=" mb-0 text-white"
+                                style="word-break: break-word; font-size: 16px; line-height: 1.4;">
+                                0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                <i onclick="copyToClipboard1()" class="fas fa-copy mx-1 up1"
+                                    style="color: #FDE449; cursor: pointer;"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- Right Side: Image -->
+                <div class="col-md-5 offset-md-1 image-content">
+                    <img src="./images/img.png" alt="Degens Trading" class="img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- roadmap -->
+    <section class="roadmap-section" id="roadmap">
+        <div class="container">
+            <h2 class="section-title">Our Roadmap</h2>
+            <p class="col-md-6 col-12 mb-5 mt-2 fs-5" style="text-align: left;">We're constantly improving and
+                adapting, following a fluid 'Now / Next / Later' approach rather than rigid deadlines. Our focus?
+                Delivering cutting-edge tools to give you the edge in the market.
+            </p>
+            <div class="row">
+                <!-- Now Card -->
+                <div class="col-md-4">
+                    <div class="roadmap-card">
+                        <h3><i class="fas fa-clock"></i> Coming Soon:</h3>
+                        <ul>
+                            <li>Cutting Edge Telegram Bot <span class="montserrat-regular">"</span>DORKYBOT<span
+                                    class="montserrat-regular">"</span></li>
+                            <li>Web dApp Beta Launch</li>
+
+                            <li>Multichain Support
+                                <span class="montserrat-regular">(</span>
+                                Ethereum<span class="montserrat-regular">,</span>
+                                Solana<span class="montserrat-regular">,</span>
+                                Base<span class="montserrat-regular">,</span>
+                                Blast<span class="montserrat-regular">,</span>
+                                and beyond<span class="montserrat-regular">)</span>
+                            </li>
+                            <li>Comprehensive Trade Overview Dashboard</li>
+
+                            <li>Revamped Solana Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Next Card -->
+                <div class="col-md-4">
+                    <div class="roadmap-card">
+                        <h3><i class="fas fa-arrow-right"></i> Next</h3>
+                        <ul>
+                            <li>Dex Integration</li>
+                            <li>CopyTrade Feature to Follow Profitable Traders</li>
+                            <li>TWAP <span class="montserrat-regular">(</span>Time<span
+                                    class="montserrat-regular">-</span>Weighted Average Price<span
+                                    class="montserrat-regular">)</span> Orders</li>
+                            <li>Public Release of Web dApp</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Later Card -->
+                <div class="col-md-4">
+                    <div class="roadmap-card">
+                        <h3><i class="fas fa-hourglass-half"></i> Later</h3>
+                        <ul>
+                            <li>Multi-Platform Access <span class="montserrat-regular">(</span>Web<span
+                                    class="montserrat-regular">,</span> Mobile<span class="montserrat-regular">,</span>
+                                Desktop<span class="montserrat-regular">)</span></li>
+                            <li>Advanced Wallet Tracking Tools</li>
+                            <li>Complete Trade History Analytics</li>
+                            <!-- <li>DorkyBot Academy</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- progress -->
+    <section class="degens-section">
+        <div class="container col-12" style="height: 600px;">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-md-6 text-content">
+                    <h2>Your Ideas, Our Progress</h2>
+                    <p>
+                        The strength of Dorky Bot comes from its community. We believe that web3 thrives on
+                        collaboration. Have an idea to make Dorky Bot even better? Share it with us below — because
+                        your feedback drives innovation!
+                    </p>
+                </div>
+                <!-- Right Side: Image -->
+                <div class="col-md-5 offset-md-1 image-content">
+                    <img src="./images/img.png" alt="Degens Trading" class="img-fluid">
+                </div>
+
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                    onclick="window.open(this.href, '_blank'); return false;">
+                    <button class="fillbtn">Fill out form</button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Main Trading Text -->
+            <h2 class="footer-title">Start Trading with <br> DorkyBot Today</h2>
+            <p class="footer-subtext">
+                Your smart ally in the world of trading: Boost your gains with Dorky Bot Telegram Bot.
+                Trade faster, snipe earlier, and track live profits.
+
+            </p>
+
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <!-- Left Side: Get Started Dropdown -->
+                <!-- Updated Get Started Dropdown -->
+                <div class="ms-lg-3 get-started-dropdown">
+                    <a class="btn nav-link text-white dropdown-toggle get-started-btn" href="#" id="getStartedDropdown"
+                        style=" color: black; font-weight: 700;" role="button" data-bs-toggle="dropdown">
+                        GET STARTED
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end get-started-menu-end"
+                        aria-labelledby="getStartedDropdown">
+                        <li>
+                            <a class="dropdown-item" href="https://t.me/dorkychat " target="_blank">
+                                <i class="fab fa-telegram"></i> ETH BOT Register
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item disabled text-white get-started-static" href="#">
+                                <i class="fas fa-globe text-white"></i> Webapp
+                                <strong class="coming-soon-badge"
+                                    style="font-size: 12px; border: 1px solid; border-radius: 25px; padding: 5px;">Coming
+                                    soon</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Right Side: Social Icons -->
+                <div class="footer-socials">
+                    <a href="https://x.com/" target="_blank" class="social-icon"><i class="fab fa-x-twitter"
+                            target="_blank"></i></a>
+                    <a href="https://t.me/" target="_blank" class="social-icon"><i
+                            class="fab fa-telegram-plane" target="_blank"></i></a>
+
+                </div>
+            </div>
+
+            <!-- Footer Logo in the Middle -->
+            <div class="footer-logo">
+                <img src="/images/logo.png" alt="DorkyBot Logo">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let slidingBar = document.querySelector(".sliding-bar");
+            let navbar = document.querySelector(".navbar");
+
+            if (window.scrollY > 50) { // When user scrolls down
+                slidingBar.style.transform = "translateY(-100%)"; // Hide sliding bar
+                navbar.classList.add("fixed"); // Move navbar to the top
+            } else {
+                slidingBar.style.transform = "translateY(0)"; // Show sliding bar
+                navbar.classList.remove("fixed"); // Reset navbar position
+            }
+        });
+    </script>
+
+    <script>
+        function copyToClipboard1() {
+            // Create a textarea element to hold the text to be copied
+            var textArea = document.createElement("textarea");
+            textArea.value = "0xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+            document.body.appendChild(textArea);
+
+            // Select and copy the text
+            textArea.select();
+            document.execCommand('copy');
+
+            // Remove the textarea
+            document.body.removeChild(textArea);
+
+            // Display a message (optional)
+            alert("Text copied to clipboard!");
+        }
+    </script>
+
+</body>
+
+</html>
